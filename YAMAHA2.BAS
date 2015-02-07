@@ -1,0 +1,18 @@
+DO
+SELECT CASE INKEY$
+CASE "1": PLAY "c"
+CASE "2": PLAY "d"
+CASE "3": PLAY "e"
+CASE "4": PLAY "f"
+CASE "5": PLAY "g"
+CASE "6": PLAY "a"
+CASE "8": PLAY "<"
+CASE "9": PLAY ">"
+CASE "7": PLAY "b"
+CASE CHR$(13): PLAY "t54"
+CASE CHR$(32): PLAY "t140"
+CASE CHR$(27): END
+END SELECT
+LOOP
+
+
